@@ -1,2 +1,29 @@
 <!--pages/demo/demo.wxml-->
-<text>5201314</text>
+<text>{{numb}}</text>
+
+<view>{{message}}</view>
+<text class="" selectable="false" space="false" decode="false">
+    {{poe.name}}
+</text>
+
+<view id="a3">
+    <checkbox  checked="{{checks.box1}}" >
+        122
+    </checkbox>
+    <checkbox  checked="{{checks.box2}}" >
+        233
+    </checkbox> 
+</view>
+<view hidden="{{!checks.box1}}">
+  <view wx:for="{{dalist}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+    <view data-is="{{item.isu}}">
+      {{item.id}}: {{item.name}}
+    </view>
+      
+  </view>
+  <view style="border: 1rpx solid black;width: 50%; position: center;">
+    <input type="text" bindinput="inputHandle"/>
+    <button data-op="s" bindtap="click">点我</button>
+  </view>
+</view>
+  

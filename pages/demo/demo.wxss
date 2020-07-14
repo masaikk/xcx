@@ -1,1 +1,8 @@
 /* pages/demo/demo.wxss */
+@import "../../app.wxss";
+#a3{
+  
+  border-width: 2rpx;
+  border-style: dashed;
+  border-color: aqua;
+}

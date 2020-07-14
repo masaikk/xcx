@@ -1,66 +1,86 @@
-// pages/demo/demo.js
+//Page Object
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    numb:5201314,
+    message:"424324234324",
+    poe:{
+      name:"saisnas",
+      num:8778,
+    },
+    checks:{
+      box1:true,
+      box2:false,
+    },
+    dalist:[
+      {
+        name:'lbw',
+        id:183,
+        isu:true,
+      },
+      {
+        name:'cdf',
+        id:535,
+        isu:true,
+      },
+      {
+        name:'pdg',
+        id:752,
+        isu:false,
+      },
+
+    ],
+    
+  },
+  inputHandle(e){
+    //console.warn(e.detail.value)
+    wx.showToast({
+      title: e.detail.value,
+      duration:1000,
+    })
+    //this.message=e.detail.value;
+    this.setData({
+      message:e.detail.value,
+    })
+  },
+  click(e){
+    
+    if(e.target.dataset.op=="s")
+      this.setData({
+        numb:this.data.numb+1,
+      });
+  },
+  
+  //options(Object)
+  onLoad: function(options){
+    
+    
+  },
+  onReady: function(){
+    
+  },
+  onShow: function(){
+    
+  },
+  onHide: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  onUnload: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  onPullDownRefresh: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+  onReachBottom: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+  onShareAppMessage: function(){
 
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+  onPageScroll: function(){
 
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  //item(index,pagePath,text)
+  onTabItemTap:function(item){
 
   }
-})
+});
