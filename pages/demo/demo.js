@@ -1,7 +1,8 @@
 //Page Object
 Page({
   data: {
-    numb:5201314,
+    imgnum:2,
+    imgsrc:"http://119.23.182.180/project/jp2.jpg",
     message:"424324234324",
     poe:{
       name:"saisnas",
@@ -29,25 +30,21 @@ Page({
       },
 
     ],
+
     
   },
   inputHandle(e){
     //console.warn(e.detail.value)
-    wx.showToast({
-      title: e.detail.value,
-      duration:1000,
-    })
     //this.message=e.detail.value;
     this.setData({
       message:e.detail.value,
     })
   },
-  click(e){
-    
-    if(e.target.dataset.op=="s")
-      this.setData({
-        numb:this.data.numb+1,
-      });
+  showInfo(e){
+    this.setData({
+      imgnum:((this.data.imgnum+1)>4?2:this.data.imgnum+1 ),
+      imgsrc:"http://119.23.182.180/project/jp"+this.data.imgnum+".jpg",
+    })
   },
   
   //options(Object)

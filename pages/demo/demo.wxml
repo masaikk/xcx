@@ -5,6 +5,7 @@
 <text class="" selectable="false" space="false" decode="false">
     {{poe.name}}
 </text>
+<image id="yukari" mode="aspectFit" src="{{imgsrc}}" wx-key="{{imgsrc}}" alt="123" />
 
 <view id="a3">
     <checkbox  checked="{{checks.box1}}" >
@@ -22,8 +23,10 @@
       
   </view>
   <view style="border: 1rpx solid black;width: 50%; position: center;">
+    <button bindtap="showInfo">试试</button>
     <input type="text" bindinput="inputHandle"/>
     <button data-op="s" bindtap="click">点我</button>
+    
   </view>
 </view>
   
