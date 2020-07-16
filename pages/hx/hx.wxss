@@ -9,3 +9,22 @@
   background: bg_red;
 
 }
+
+.eranngu{
+
+  width: 200rpx;
+  height: 70rpx;
+  color: #6699FF;
+  border: 3rpx solid #6699FF;
+  border-radius: 80rpx;
+  font-size: 35rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+
+}
+#a3{
+  font-size: medium;
+}
