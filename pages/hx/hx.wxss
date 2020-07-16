@@ -1,1 +1,11 @@
 /* pages/hx/hx.wxss */
+#gengxin{
+  
+  margin-top: 30px;
+  width: 80%;
+  background-color: rgb(252, 126, 67);
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+
+}

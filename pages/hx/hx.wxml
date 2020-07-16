@@ -1,16 +1,19 @@
 <!--pages/hx/hx.wxml-->
 <!-- <text>pages/hx/hx.wxml</text> -->
 
-<audio name="开始灯光测试" author="masaikk"  controls="true" src="{{strsrc}}"></audio>
-<audio name="语音" author="masaikk"  controls="true" src="{{ausrc}}"></audio>
-<audio name="结束灯光测试" author="masaikk"  controls="true" src="{{endsrc}}"></audio>
-
-<view style="border-color: black; border-width: 2px; border-style: dotted;">
-
-  <!-- <radio name="c">远光</radio>
-<radio name="c">近光</radio>
-<radio name="c">交替</radio> -->
-
-
+<audio poster="http://119.23.182.180/hexie/img/laba.jpg" name="开始灯光测试" author="masaikk"  controls="true" src="{{strsrc}}"></audio>
+<audio poster="http://119.23.182.180/hexie/img/laba.jpg"  name="语音" author="masaikk"  controls="true" src="{{ausrc}}"></audio> 
+<audio poster="http://119.23.182.180/hexie/img/laba.jpg" name="结束灯光测试" author="masaikk"  controls="true" src="{{endsrc}}"></audio>
+<button bindtap="change" id="gengxin">更新</button>
+<view hidden style="border-color: black; border-width: 2px; border-style: dotted;">
+  <text>{{auans}}</text>
 </view>
-<button bindtap="change">click</button>
+ <!-- <radio name="c">远光</radio>
+<radio name="c">近光</radio>
+<radio name="c">交替</radio>  -->
+<button id="a1" bindtap="anstap">远光</button>
+<button id="a2" bindtap="anstap">近光</button>
+<button id="a3" bindtap="anstap">交替</button>
+<button id="a4" bindtap="anstap">小灯</button>
+
+
