@@ -1,0 +1,16 @@
+<!--pages/hx/hx.wxml-->
+<!-- <text>pages/hx/hx.wxml</text> -->
+
+<audio name="开始灯光测试" author="masaikk"  controls="true" src="{{strsrc}}"></audio>
+<audio name="语音" author="masaikk"  controls="true" src="{{ausrc}}"></audio>
+<audio name="结束灯光测试" author="masaikk"  controls="true" src="{{endsrc}}"></audio>
+
+<view style="border-color: black; border-width: 2px; border-style: dotted;">
+
+  <!-- <radio name="c">远光</radio>
+<radio name="c">近光</radio>
+<radio name="c">交替</radio> -->
+
+
+</view>
+<button bindtap="change">click</button>
