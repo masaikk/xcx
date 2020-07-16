@@ -7,6 +7,10 @@
   border-color: aqua;
 }
 #yukari{
-  width: 1000rpx;
-  
+  width: 500rpx;
+}
+
+.s{
+  width: 100%;
+  height: calc(100vw/500*300);
 }

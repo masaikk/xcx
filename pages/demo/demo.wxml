@@ -1,7 +1,30 @@
 <!--pages/demo/demo.wxml-->
 <text>{{numb}}</text>
+<audio name="辛苦了" author="masaikk"  controls="true" src="{{ausrc}}"></audio>
+    
 
-<view>{{message}}</view>
+<view>
+  <swiper  class="s" autoplay interval="1000" circular indicator-dots >
+    <swiper-item>
+      <image mode="widthFix" src="http://119.23.182.180/project/jp1.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image mode="widthFix" src="http://119.23.182.180/project/jp2.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image mode="widthFix" src="http://119.23.182.180/project/jp3.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image mode="widthFix" src="http://119.23.182.180/project/jp4.jpg" />
+    </swiper-item>
+
+  </swiper>
+  
+
+
+
+  
+</view>
 <text class="" selectable="false" space="false" decode="false">
     {{poe.name}}
 </text>
@@ -25,7 +48,7 @@
   <view style="border: 1rpx solid black;width: 50%; position: center;">
     <button bindtap="showInfo">试试</button>
     <input type="text" bindinput="inputHandle"/>
-    <button data-op="s" bindtap="click">点我</button>
+    <button data-op="s" bindtap="click">日语发音</button>
     
   </view>
 </view>
