@@ -84,6 +84,7 @@ Page({
   },
   anstap(e){
     //console.warn(e.currentTarget.id);
+    
     switch(e.currentTarget.id){
       case 'a1': {
         if(this.data.autype==2){

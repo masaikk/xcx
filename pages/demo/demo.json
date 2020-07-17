@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "Ta":"../../components/Tabs/Tabs"
+  },
   "navigationBarBackgroundColor": "#93503a",
   "navigationBarTitleText": "String"
 }

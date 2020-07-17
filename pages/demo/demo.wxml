@@ -1,8 +1,9 @@
 <!--pages/demo/demo.wxml-->
-<text>{{numb}}</text>
+<Ta></Ta>
 <audio name="辛苦了" author="masaikk"  controls="true" src="{{ausrc}}"></audio>
     
 
+<button size="mini">按钮</button>
 <view>
   <swiper  class="s" autoplay interval="1000" circular indicator-dots >
     <swiper-item>

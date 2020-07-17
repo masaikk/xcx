@@ -1,7 +1,10 @@
 {
   "pages":[
-    "pages/hx/hx",
-    "pages/demo/demo",
+    "pages/demo/demo",     
+    "pages/hx/hx",    
+   
+
+
     "pages/tab/tab",
     "pages/logs/logs",
     "pages/index/index"
